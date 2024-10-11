@@ -40,8 +40,6 @@ with open(file_to_load) as election_data:
             candidate_votes[candidate] = 1
 
 
-# Open a text file to save the output
-#with open(file_to_output, "w") as txt_file:
 
     # Print the total vote count (to terminal)
 print("Election Results\n")
@@ -64,3 +62,17 @@ print(f"\n-------------------------\n\nWinner: {max_votes_candidate}"
 
 
     # Save the winning candidate summary to the text file
+output = (
+f"Election Results\n"
+f"-------------------------\n\nTotal votes: {total_votes}"
+f"\n\n-------------------------\n"
+f"{candidate}: {percentage:.2f}% ({votes})"
+f"\n-------------------------\n\nWinner: {max_votes_candidate}"
+f"\n\n-------------------------"
+)
+
+    
+# Open a text file to save the output
+with open(file_to_output, "w") as txt_file:
+    txt_file.write(output)
+

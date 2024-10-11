@@ -1,1 +1,12 @@
-PyPoll
+Election Results
+-------------------------
+
+Total votes: 369711
+
+-------------------------
+Raymon Anthony Doane: 3.14% (11606)
+-------------------------
+
+Winner: Diana DeGette
+
+-------------------------
