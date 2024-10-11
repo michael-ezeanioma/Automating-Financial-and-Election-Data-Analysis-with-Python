@@ -46,14 +46,37 @@ print("Election Results\n")
 print(f"-------------------------\n\nTotal votes: {total_votes}"
       "\n\n-------------------------\n")
 
-for candidate, votes in candidate_votes.items(): 
-    percentage = (votes / total_votes) * 100 #calculating candidate percentage of votes
-    print(f"{candidate}: {percentage:.2f}% ({votes})")
+results= "" #variable to soley output for loop in txt file
+
+#for candidate, votes in candidate_votes.items(): 
+    #percentage = (votes / total_votes) * 100 #calculating candidate percentage of votes
+    #print(f"{candidate}: {percentage:.2f}% ({votes})")
+    #results += (
+        #f"Election Results\n"
+        #f"-------------------------\n\nTotal votes: {total_votes}"
+        #f"\n\n-------------------------\n"
+        #f"{candidate}: {percentage:.2f}% ({votes})\n"
+        #f"\n-------------------------\n\nWinner: {max_votes_candidate}"
+        #f"\n\n-------------------------"
+        #)
     
         #Add a vote to the candidate's count
 max_votes_candidate = max(candidate_votes, key = candidate_votes.get) #max vot getter line
 max_votes = candidate_votes[max_votes_candidate]
 
+for candidate, votes in candidate_votes.items(): 
+    percentage = (votes / total_votes) * 100 #calculating candidate percentage of votes
+    print(f"{candidate}: {percentage:.2f}% ({votes})")
+    results += (
+        f"Election Results\n"
+        f"-------------------------\n\nTotal votes: {total_votes}"
+        f"\n\n-------------------------\n"
+        f"{candidate}: {percentage:.2f}% ({votes})\n"
+        f"\n-------------------------\n\nWinner: {max_votes_candidate}"
+        f"\n\n-------------------------"
+        )
+
+    
 print(f"\n-------------------------\n\nWinner: {max_votes_candidate}"
       "\n\n-------------------------")
 
@@ -64,7 +87,7 @@ print(f"\n-------------------------\n\nWinner: {max_votes_candidate}"
     # Save the winning candidate summary to the text file
 output = (
 f"Election Results\n"
-f"-------------------------\n\nTotal votes: {total_votes}"
+f"------------------------\n\nTotal votes: {total_votes}"
 f"\n\n-------------------------\n"
 f"{candidate}: {percentage:.2f}% ({votes})"
 f"\n-------------------------\n\nWinner: {max_votes_candidate}"
@@ -74,5 +97,6 @@ f"\n\n-------------------------"
     
 # Open a text file to save the output
 with open(file_to_output, "w") as txt_file:
-    txt_file.write(output)
+    #txt_file.write(output)
+    txt_file.write(results)
 
