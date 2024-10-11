@@ -9,6 +9,7 @@ import os
 file_to_load = os.path.join("Resources", "budget_data.csv")  # Input file path
 file_to_output = os.path.join("analysis", "budget_analysis.txt")  # Output file path
 
+
 # Define variables to track the financial data
 total_months = 0 #variable for total month counter
 total_net = 0 #variable for total net sum counter
@@ -131,7 +132,6 @@ with open(file_to_load) as financial_data: #opens file in the file_to_load colum
 #else:
     #print('No valid data foundddd')
 
-
 # Calculate the average net change across the months
 if count > 0:
     average_change = total_change / count #average formula: divides sum of all column by amount of rows counted in that count variable
@@ -141,6 +141,15 @@ else:
 
 
 # Generate the output summary
+
+output = f'Financial Analysis \n \n'
+#f'----------------------------\n' +
+#f'Total months: {total_months}' +
+#f'Total: ${total_net}' +
+#f'Average Change: ${average_change:.2f}' +
+#f'Greatest Increase in Profits: {max_difference_row[0]} (${max_difference})' +
+#f'Greatest Increase in Profits: {max_difference_row[0]} (${max_difference})'         
+
 
 print("Financial Analysis \n \n"
 "----------------------------\n")
@@ -160,6 +169,6 @@ print(f"Greatest Decrease in Profits: {max_decrease_row[0]} (${max_decrease})")
 # Print the output
 
 # Write the results to a text file
-#with open(file_to_output, "w") as txt_file:
-    #txt_file.write(output)
+with open(file_to_output, "w") as txt_file:
+    txt_file.write(output)
 
