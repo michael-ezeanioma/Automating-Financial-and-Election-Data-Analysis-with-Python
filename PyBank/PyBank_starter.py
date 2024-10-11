@@ -142,13 +142,15 @@ else:
 
 # Generate the output summary
 
-output = f'Financial Analysis \n \n'
-f'----------------------------\n'
-f'Total months: {total_months}'
-f'Total: ${total_net}' 
-f'Average Change: ${average_change:.2f}' 
-f'Greatest Increase in Profits: {max_difference_row[0]} (${max_difference})'
-f'Greatest Increase in Profits: {max_difference_row[0]} (${max_difference})'         
+output = (
+f'Financial Analysis \n \n'
+f'----------------------------\n\n'
+f'Total months: {total_months}\n'
+f'Total: ${total_net}\n' 
+f'Average Change: ${average_change:.2f}\n' 
+f'Greatest Increase in Profits: {max_difference_row[0]} (${max_difference})\n'
+f'Greatest Increase in Profits: {max_difference_row[0]} (${max_difference})\n'
+)
 
 
 print("Financial Analysis\n \n"
