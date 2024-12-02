@@ -61,7 +61,9 @@ Winner: Diana DeGette
 # Files
 
 PyBank_starter.py: Python script for the PyBank analysis.
+
 PyPoll_starter.py: Python script for the PyPoll analysis.
+
 Datasets: CSV files used in the analyses (budget_data.csv and election_data.csv).
 
 # Dependencies
