@@ -15,11 +15,11 @@ Analyze company financial records from budget_data.csv to calculate:
 - Greatest increase in profits (date and amount).
 - Greatest decrease in profits (date and amount).
 
-__Results:__
 
-Example output:
 
-Financial Analysis
+__Example output:__
+
+__Financial Analysis__
 
 Total Months: 86
 
