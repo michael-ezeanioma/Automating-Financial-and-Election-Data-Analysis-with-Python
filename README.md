@@ -19,8 +19,7 @@ Analyze company financial records from budget_data.csv to calculate:
 
 __Example output:__
 
-Financial Analysis
----------------
+__Financial Analysis__
 
 Total Months: 86
 
@@ -31,12 +30,6 @@ Average Change: $-8311.11
 Greatest Increase in Profits: Aug-16 ($1862002)
 
 Greatest Decrease in Profits: Feb-14 ($-1825558)
-
-__Key Features:__
-
-- Results printed to the terminal.
-  
-- Outputs exported to a text file.
    
 # 2. PyPoll: Election Results Analysis
 __Objective:__
@@ -51,23 +44,17 @@ Process election data from election_data.csv to determine:
   
 __Results:__
 
-Example output:
+__Example output:__
 
-Election Results
--------------------------
+__Election Results__
+
 Total Votes: 369711
--------------------------
+
 Charles Casper Stockham: 23.049% (85213)
 Diana DeGette: 73.812% (272892)
 Raymon Anthony Doane: 3.139% (11606)
--------------------------
+
 Winner: Diana DeGette
--------------------------
-
-# Key Features:
-
-Results printed to the terminal.
-Outputs exported to a text file.
 
 # Files
 
@@ -75,7 +62,7 @@ PyBank_starter.py: Python script for the PyBank analysis.
 PyPoll_starter.py: Python script for the PyPoll analysis.
 Datasets: CSV files used in the analyses (budget_data.csv and election_data.csv).
 
-# Requirements
+# Dependencies
 
 __Data Handling:__
 Read data from CSV files using Python's csv module.
@@ -95,7 +82,9 @@ Remove debugging artifacts.
 # Technologies Used
 
 Python: Core programming language for scripting.
+
 CSV Module: To read and write CSV files.
+
 File I/O: For exporting results to text files.
 
 # How to Use
