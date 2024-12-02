@@ -19,7 +19,8 @@ Analyze company financial records from budget_data.csv to calculate:
 
 __Example output:__
 
-__Financial Analysis__
+Financial Analysis
+_____________________________________
 
 Total Months: 86
 
