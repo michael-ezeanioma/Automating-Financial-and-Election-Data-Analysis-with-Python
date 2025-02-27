@@ -2,7 +2,7 @@
 
 This project demonstrates the power of Python scripting for automating and analyzing large datasets. It includes two real-world scenarios: financial analysis (PyBank) and election data processing (PyPoll). By leveraging Python, these analyses go beyond the capabilities of Excel, showcasing efficient handling of complex datasets.
 
-# Challenges
+# Project Components
 
 # 1. PyBank: Financial Analysis 
 __Objective:__
